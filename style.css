@@ -1,0 +1,51 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url("./images/matrix.jpg");
+}
+
+header,
+main,
+footer{
+    color: #ccffcc;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+header h1{
+    padding: 2em 0;
+}
+
+header span{
+    font-size: 1.5em;
+    color: ;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+    background: linear-gradient(to bottom, #00ff00 0%, #003300 100%);
+    
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+nav a{
+    padding: .5em 2em;
+    text-decoration: none;
+    color: #ccffcc;
+    opacity: 1;
+}
+
+nav a:hover{
+    color: #00ff00;
+}
