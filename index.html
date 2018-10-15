@@ -3,61 +3,79 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Tim Horta's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <script src="main.js"></script>
-    <title>Tim Horta's Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="headerContainer">
         <h1>Tim Horta</h1>
         <span>Junior Programmer</span>
     </header>
 
+
+
     <main>
         <section id="aboutMe">
-            <img src="./images/placeholder.jpg">
-            <a href="https://www.linkedin.com/in/tim-horta-488929170/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/SyphonCypher"><i class="fab fa-github-square"></i></a>
-            <p>Doggo ipsum big ol noodle horse aqua doggo, heck. Pupperino smol long water shoob stop it fren heckin good boys, blep heckin lotsa pats. Wow such tempt heckin good boys and girls woofer very hand that feed shibe, lotsa pats aqua doggo. Smol borking doggo with a long snoot for pats very taste wow pupperino ruff super chub, very good spot wow very biscit borking doggo. Heckin good boys and girls he made many woofs heckin angery woofer snoot super chub, he made many woofs pats. Heckin sub woofer shooberino woofer shoob floofs wrinkler, heckin good boys and girls extremely cuuuuuute sub woofer woofer.</p>
-            <ul>
-                <li>skill</li>
-                <li>skill</li>
-                <li>skill</li>
-            </ul>
-            <ul>
-                <li>Phone: (440) 453-4969</li>
-                <li>Email: tim_horta@outlook.com</li>
-            </ul>
+            <img src="./images/tim.png">
+            <div class="mainParaContainer">
+                <p>I'm a software development apprentice skilled in multiple programming languages. (C#, JavaScript, HTML5, etc.) I'm knowledgeable in use of IDEs such as Microsoft Visual Studio and MSV Code. Practitioner of industry standard philosophies: TDD, Agile(Scrum), OOP(Object-Oriented Programming, and Responsive Design. I have an interest in online privacy and cyber security and wish to pursue a career in those fields whether it be with the government or a private entity.</p>
+            </div>
+
+            <div class="skillsContainer">
+                <ul>
+                    <li>Smart</li>
+                    <li>Dedicated</li>
+                    <li>Goal Oriented</li>
+                </ul>
+            </div>
+
+            <div class="contactContainer">
+                <ul>
+                    <li>Phone: (440) 453-4969</li>
+                    <li>Email: tim_horta@outlook.com</li>
+                </ul>
+            </div>
+
+            <div class="anchorContainer">
+                <a href="https://www.linkedin.com/in/tim-horta-488929170/"><i class="fab fa-linkedin" style="font-size:60px; color:lime"></i></a>
+                <a href="https://github.com/SyphonCypher"><i class="fab fa-github-square" style="font-size:60px; color:lime"></i></a>
+            </div>
         </section>
+        
 
         <section id="myProjects">
-            <h2>My Projects</h2>
-            <p>floofs long bois lotsa pats. Ruff big ol borkf long doggo shibe, vvv shoober shoob, blep very taste wow blop. H*ck boof ruff boofers blep waggy wags stop it fren doing me a frighten h*ck, floofs puggo wow such tempt vvv what a nice floof very taste wow fat boi.  Shoober heckin good boys and girls you are doing me a frighten maximum borkdrive, fat boi. Many pats borking doggo ur givin me a spook long doggo shooberino blop, yapper long doggo length boy.</p>
-            <div>
+            <div class="projectsTop">
+                <h2>My Projects</h2>
+                <p>Below is a small collection of my favorite work.</p>
+            </div>
+            <div class="articleContainer">
                 <article>
-                    <h3>Project 1</h3>
-                    <a href="https://github.com/SyphonCypher">Project 1</a>
-                    <img src=./images/project1.jpg">
-                    <p>You are doing me a frighten porgo long bois ur givin me a spook, he made many woofs such treat noodle horse, corgo ur givin me a spook.</p>
+                    <h3>Virtual Pet</h3>
+                    <a href="https://github.com/SyphonCypher/VirtualPet">Virtual Pet - Github</a>
+                    <img src="./images/virtualpet.png">
+                    <p>Simulates a virtual pet game within console. The pet has stats that will tick every time a command is entered.</p>
                 </article>
                 <article>
                     <h3>Project 2</h3>
-                    <a href="https://github.com/SyphonCypher">Project 2</a>
-                    <img src=./images/project2.jpg">
-                    <p>You are doing me a frighten porgo long bois ur givin me a spook, he made many woofs such treat noodle horse, corgo ur givin me a spook.</p>
+                    <a href="https://github.com/SyphonCypher/LuckyNumbers">Lucky Numbers - Github</a>
+                    <img src="./images/luckynumbers.png">
+                    <p>A simple application that simulates a lottery within console and generates a winning based on how many numbers the user guesses correctly.</p>
                 </article>
                 <article>
-                    <h3>Project 3</h3>
-                    <a href="https://github.com/SyphonCypher">Project 3</a>
-                    <img src=./images/project3.jpg">
-                    <p>You are doing me a frighten porgo long bois ur givin me a spook, he made many woofs such treat noodle horse, corgo ur givin me a spook.</p>
+                    <h3>Fortune Teller</h3>
+                    <a href="https://github.com/SyphonCypher/FortuneTellerMethod">Fortune Teller - Github</a>
+                    <img src="./images/fortuneteller.png">
+                    <p>A fortune telling application in console that queries the user for different information and generates a fortune based on that information.</p>
                 </article>
             </div>
+
         </section>
     </main>
+
+
 
     <nav>
         <a href="#aboutMe">About Me</a>
