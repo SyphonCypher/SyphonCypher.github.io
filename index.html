@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <script src="main.js"></script>
 </head>
 <body>
     <header class="headerContainer">
@@ -21,15 +20,13 @@
         <section id="aboutMe">
             <img src="./images/tim.png">
             <div class="mainParaContainer">
-                <p>I'm a software development apprentice skilled in multiple programming languages. (C#, JavaScript, HTML5, etc.) I'm knowledgeable in use of IDEs such as Microsoft Visual Studio and MSV Code. Practitioner of industry standard philosophies: TDD, Agile(Scrum), OOP(Object-Oriented Programming, and Responsive Design. I have an interest in online privacy and cyber security and wish to pursue a career in those fields whether it be with the government or a private entity.</p>
+                <p>
+                <span id="modal-trigger" class="live">About Me</span>.
+                </p>
             </div>
 
             <div class="skillsContainer">
-                <ul>
-                    <li>Smart</li>
-                    <li>Dedicated</li>
-                    <li>Goal Oriented</li>
-                </ul>
+                <p>C#  •  .NET  •  Active Server Pages / ASP.net  •  JavaScript  •  JQuery  •  Flexbox •  MVC •  HTML5  •  CSS3 •  Bootstrap •  TDD •  Agile (Scrum) •  Object Oriented Programming (OOP)  • AJAX  •  JSON  •  Restful APIs •  Responsive Design / Mobile  •  Structured Query Language (SQL) •  Transactional Databases / MS SQL  •  Source Control / GitHub</p>
             </div>
 
             <div class="contactContainer">
@@ -56,25 +53,58 @@
                     <h3>Virtual Pet</h3>
                     <a href="https://github.com/SyphonCypher/VirtualPet">Virtual Pet - Github</a>
                     <img src="./images/virtualpet.png">
+                    <button>Show Details</button>
                     <p>Simulates a virtual pet game within console. The pet has stats that will tick every time a command is entered.</p>
                 </article>
                 <article>
-                    <h3>Project 2</h3>
+                    <h3>Lucky Numbers</h3>
                     <a href="https://github.com/SyphonCypher/LuckyNumbers">Lucky Numbers - Github</a>
                     <img src="./images/luckynumbers.png">
+                    <button>Show Details</button>
                     <p>A simple application that simulates a lottery within console and generates a winning based on how many numbers the user guesses correctly.</p>
                 </article>
                 <article>
                     <h3>Fortune Teller</h3>
                     <a href="https://github.com/SyphonCypher/FortuneTellerMethod">Fortune Teller - Github</a>
                     <img src="./images/fortuneteller.png">
+                    <button>Show Details</button>
                     <p>A fortune telling application in console that queries the user for different information and generates a fortune based on that information.</p>
                 </article>
             </div>
 
         </section>
-    </main>
 
+
+        <section id="myProjects2">
+            <h2>My projects carousel</h2>
+          <p>All my projects listed above but inside a carousel this time.</p>
+    
+            <div id="slider">
+              <div id="slider-frame">
+                
+                <div id="slider-prev">PREV</div>
+                <div id="slider-next">NEXT</div>
+    
+                <div id="slider-images">
+                  <div data-src="images/virtualpet.png">
+                    My Virtual Pet project.
+                  </div>
+                  <div data-src="images/luckynumbers.png">
+                    My Lucky Numbers project.
+                  </div>
+                  <div data-src="images/fortuneteller.png">
+                    My Fortune Teller project.
+                  </div>
+                </div>
+    
+              </div>
+              <div id="slider-caption">
+                The caption.
+              </div>
+            </div>
+    
+          </section>
+    </main>
 
 
     <nav>
@@ -85,5 +115,19 @@
     <footer>
         &copy; 2018 Tim Horta
     </footer>
+    
+    <div id="backdrop">
+        <div id="modal">
+          <button class="text-button">Close</button>
+          <h4>Yep, it's filler text alright.</h4>
+    
+          <div id="modal-content">
+              <p>I'm a software development apprentice skilled in multiple programming languages. (C#, JavaScript, HTML5, etc.) I'm knowledgeable in use of IDEs such as Microsoft Visual Studio and MSV Code. Practitioner of industry standard philosophies: TDD, Agile(Scrum), OOP(Object-Oriented Programming, and Responsive Design. I have an interest in online privacy and cyber security and wish to pursue a career in those fields whether it be with the government or a private entity.</p>
+          </div>
+        </div>
+      </div>
+    
+      <script src="./main.js"></script>
+
 </body>
 </html>
